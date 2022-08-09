@@ -1,0 +1,4 @@
+# default ignorance
+build/
+.gradle
+.idea
