@@ -1,3 +1,5 @@
+package core;
+
 import network.MessagingQueue;
 import render.frames.MainFrame;
 import render.panels.LoginPanel;
@@ -17,6 +19,6 @@ public class Main {
         frame.add(registerPanel);
         frame.repaint();
 
-        MessagingQueue mq = new MessagingQueue();
+        Context.RequestsMessagingQueue = new MessagingQueue("Requests");
     }
 }
