@@ -1,14 +1,15 @@
 package render.frames;
 
+import service.system.Environment;
+
 import javax.swing.*;
-import java.awt.*;
 
 public class MainFrame extends JFrame {
     public MainFrame() {
         setTitle("League of Legends - 2D");
+        setSize(Environment.RESOLUTION_1280_720);
         setLayout(null);
-        setExtendedState(JFrame.MAXIMIZED_BOTH);
-        setUndecorated(true);
+//        setUndecorated(true);
         setVisible(true);
     }
 }
