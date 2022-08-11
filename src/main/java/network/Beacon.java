@@ -1,5 +1,5 @@
 package network;
 
 public interface Beacon {
-    void request(RequestHandler handler);
+    void request(byte[] payload, RequestHandler handler);
 }

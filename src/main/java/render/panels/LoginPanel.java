@@ -31,8 +31,6 @@ public class LoginPanel extends JPanel {
         loginBtn.setBounds(50, 410, 100, 20);
         registerBtn.setBounds(175, 410, 100, 20);
 
-        idText.
-
         // add component for render
         add(idLabel);
         add(pwLabel);
