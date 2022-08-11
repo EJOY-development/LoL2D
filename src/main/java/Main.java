@@ -1,6 +1,7 @@
 import network.MessagingQueue;
 import render.frames.MainFrame;
 import render.panels.LoginPanel;
+import render.panels.RegisterPanel;
 
 import javax.swing.*;
 import java.awt.*;
@@ -11,7 +12,9 @@ public class Main {
     public static void main(String[] args) {
         MainFrame frame = new MainFrame();
         LoginPanel loginPanel = new LoginPanel();
-        frame.add(loginPanel);
+        RegisterPanel registerPanel = new RegisterPanel();
+//        frame.add(loginPanel);
+        frame.add(registerPanel);
         frame.repaint();
 
         MessagingQueue mq = new MessagingQueue();

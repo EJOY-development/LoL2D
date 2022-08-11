@@ -5,16 +5,18 @@ import service.system.Environment;
 import javax.swing.*;
 import java.awt.*;
 
-public class LoginPanel extends JPanel {
+public class RegisterPanel extends JPanel {
     private JLabel idLabel = new JLabel("아이디");
     private JLabel pwLabel = new JLabel("패스워드");
+    private JLabel pwReLabel = new JLabel("패스워드 확인");
     private JTextField idText = new JTextField();
     private JPasswordField pwText = new JPasswordField();
-    private JButton loginBtn = new JButton("로그인");
-    private JButton registerBtn = new JButton("회원가입");
+    private JPasswordField pwReText = new JPasswordField();
+    private JButton confirmBtn = new JButton("회원등록");
+    private JButton clearBtn = new JButton("초기화");
 
     // 생성자
-    public LoginPanel() {
+    public RegisterPanel() {
         setLayout(null);
         setLocation(0, 0);
         setSize(Environment.RESOLUTION_1280_720);
@@ -28,16 +30,20 @@ public class LoginPanel extends JPanel {
         idText.setBounds(50, 180, 300, 50);
         pwLabel.setBounds(53, 250, 100, 25);
         pwText.setBounds(50, 270, 300, 50);
-        loginBtn.setBounds(54, 340, 100, 20);
-        registerBtn.setBounds(175, 340, 100, 20);
+        pwReLabel.setBounds(53, 340, 100, 25);
+        pwReText.setBounds(50, 360, 300, 50);
+        confirmBtn.setBounds(54, 430, 100, 20);
+        clearBtn.setBounds(175, 430, 100, 20);
 
         // add component for render
         add(idLabel);
         add(pwLabel);
+        add(pwReLabel);
         add(idText);
         add(pwText);
-        add(loginBtn);
-        add(registerBtn);
+        add(pwReText);
+        add(confirmBtn);
+        add(clearBtn);
     }
 
     // 그리는 부분
