@@ -1,6 +1,7 @@
 package core;
 
 import network.MessagingQueue;
+import render.frames.LogFrame;
 import render.frames.MainFrame;
 import render.panels.LoginPanel;
 import render.panels.RegisterPanel;
@@ -12,12 +13,10 @@ import java.util.Date;
 
 public class Main {
     public static void main(String[] args) {
-        MainFrame frame = new MainFrame();
-        LoginPanel loginPanel = new LoginPanel();
-        RegisterPanel registerPanel = new RegisterPanel();
-//        frame.add(loginPanel);
-        frame.add(registerPanel);
-        frame.repaint();
+//        MainFrame mainframe = new MainFrame();
+        LogFrame logFrame = new LogFrame();
+        logFrame.repaint();
+//        mainframe.repaint();
 
         Context.RequestsMessagingQueue = new MessagingQueue("Requests");
     }

@@ -17,9 +17,10 @@ public class LoginPanel extends JPanel {
     public LoginPanel() {
         setLayout(null);
         setLocation(0, 0);
-        setSize(Environment.RESOLUTION_1280_720);
+        setSize(400, 720);
         setVisible(true);
         setBackground(Color.WHITE);
+
 
         // location = (x, y) = 좌표 (좌상단 - 11시)
         // dimension = (w, h) = 너비 & 높이 = 크기
@@ -38,12 +39,5 @@ public class LoginPanel extends JPanel {
         add(pwText);
         add(loginBtn);
         add(registerBtn);
-    }
-
-    // 그리는 부분
-    @Override
-    protected void paintComponent(Graphics gp) {
-        super.paintComponent(gp);
-        Graphics2D g = (Graphics2D)gp;
     }
 }
